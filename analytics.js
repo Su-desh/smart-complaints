@@ -1,8 +1,8 @@
 // Sample data (you should fetch this data from a server)
 const data = {
-    total: 100,
-    solved: 75,
-    pending: 25,
+    total: 1000,
+    solved: 650,
+    pending: 350,
 };
 
 // Get the canvas element
