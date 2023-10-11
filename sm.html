@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="sm.css">
+    <style>
+        /*/body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }*/
+
+        .first {
+            display: grid;
+            height: 300px;
+            width: 400px;
+            gap: 7px;
+            margin-left: 50px;
+            margin-top: 8px;
+
+        }
+
+        .second {
+            display: grid;
+            height: 300px;
+            width: 400px;
+            gap: 7px;
+            margin-top: 8px;
+        }
+
+        .entire {
+            margin-top: 90px;
+            margin-left: 70px;
+            display: center;
+            display: flex;
+            gap: 25px;
+            background: transparent;
+            border-radius: 25px;
+            height: 400px;
+            width: 900px;
+            border: 5px solid rgb(0, 0, 0);
+
+        }
+
+        .nam {
+            background: transparent;
+            border-radius: 15px;
+        }
+
+        .nam:hover {
+            border-color: white;
+            margin-left: 5px;
+            border: 2px solid white;
+
+        }
+
+        .sub {
+            position: relative;
+            left: 500px;
+            top: -55px;
+            background-color: green;
+            color: white;
+            height: 25px;
+            width: 70px;
+            border-radius: 15px;
+        }
+
+        .sub:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="logo">
+			<span class="icon"><i class='bx bxs-smile'></i></span>
+			<span class="text">AdminHub</span>
+		</a>
+		<ul class="side-menu">
+			<li>
+				<a href="dashboard.html">
+					<span class="icon"><i class='bx bxs-dashboard' ></i></span>
+					<span class="text">Dashboard</span>
+				</a>
+				<!--<span class="top"></span>
+				<span class="bottom"></span>-->
+			</li>
+			<li>
+				<a href="manage.html">
+					<span class="icon"><i class='bx bxs-group' ></i></span>
+					<span class="text">Departments</span>
+				</a>
+				<!--<span class="top"></span>
+				<span class="bottom"></span>-->
+			</li>
+			<li>
+				<a href="analytics.html">
+					<span class="icon"><i class='bx bxs-bar-chart-alt-2' ></i></span>
+					<span class="text">Analytics</span>
+				</a>
+				<!--<span class="top"></span>
+				<span class="bottom"></span>-->
+			</li>
+			<li>
+				<a href="most.html">
+					<span class="icon"><i class='bx bxs-pie-chart' ></i></span>
+					<span class="text">Mostcomplaints</span>
+				</a>
+				<!--<span class="top"></span>
+				<span class="bottom"></span>-->
+			</li>
+			<li class="active">
+				<a href="sm.html">
+					<span class="icon"><i class='bx bxs-group' ></i></span>
+					<span class="text">usermanagement</span>
+				</a>
+				<!--<span class="top"></span>
+				<span class="bottom"></span>-->
+			</li>
+		</ul>
+
+		<ul class="side-menu bottom">
+			<li>
+				<a href="settings.html">
+					<span class="icon"><i class='bx bxs-cog' ></i></span>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="login.html" class="logout">
+					<span class="icon"><i class='bx bxs-log-out-circle' ></i></span>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+    <section id="content">
+        <nav>
+            <span class="menu-bar"><i class='bx bx-menu'></i></span>
+            <a href="#" class="link-nav">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-icon"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="notification">
+                <span class="icon"><i class='bx bxs-bell'></i></span>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <span class="name">NITHIN REDDY</span>
+                <img src="img/people.png" alt="Image">
+            </a>
+
+        </nav>
+        <main>
+            <div class="top">
+            <div class="left">
+                <h1 class="title">UserManagement</h1>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">usermanagement</a>
+                    </li>
+                    <li class="arrow-icon"><i class='bx bx-chevron-right'></i></li>
+                    <li>
+                        <a href="dashboard.html" class="active">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <form>
+                <div class="entire">
+                    <div class="first">
+                        <label for="empId">Employee ID:</label>
+                        <input type="text" id="empId" class="nam" name="empId" required>
+
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" class="nam" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="nam" name="email" required>
+
+                        <label for="password">Mobile number:</label>
+                        <input type="text" id="password" class="nam" name="password" required>
+
+                        <label>Departments:</label>
+                        <select class="nam">
+                            <option class="depart">CSE</option>
+                            <option class="depart">EEE</option>
+                            <option class="depart">ECE</option>
+                        </select>
+
+
+                    </div>
+                    <div class="second">
+                        <label>States:</label>
+                        <select class="nam">
+                            <option>Andhra pradesh</option>
+                            <option>karnataka</option>
+                            <option>kerala</option>
+                        </select class="nam">
+                        <label>type:</label>
+                        <select class="nam">
+                            <option>###</option>
+                            <option>###</option>
+                            <option>####S</option>
+                        </select>
+
+                        <label>Gender:</label>
+                        <select class="nam">
+                            <option>male</option>
+                            <option>female</option>
+                            <option>others</option>
+                        </select>
+                        <label for="confirmPassword">Password:</label>
+                        <input type="password" id="Password" class="nam" name="Password" required>
+
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" class="nam" name="confirmPassword" required>
+                    </div>
+
+                </div>
+
+                <button type="submit" id="login" class="sub">submit</button>
+            </form>
+        </main>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

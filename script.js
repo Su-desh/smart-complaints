@@ -1,5 +1,9 @@
 const allMenu = document.querySelectorAll('.side-menu:not(.bottom) li');
+<<<<<<< HEAD
 
+=======
+//active status
+>>>>>>> nithin
 allMenu.forEach(item=> {
 	const a = item.querySelector('a');
 	a.addEventListener('click', function () {

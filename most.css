@@ -60,20 +60,12 @@ body {
 }
 #sidebar .logo {
 	font-size: 20px;
-<<<<<<< HEAD
-	color: var(--blue);
-=======
 	color: var(--red);
->>>>>>> nithin
 	font-weight: 700;
 	text-align: center;
 	width: 100%;
 	height: calc(56px + 24px);
-<<<<<<< HEAD
-	background: var(--light);
-=======
 	background:#f5d6c9;
->>>>>>> nithin
 	line-height: 56px;
 	display: flex;
 	align-items: center;
@@ -102,11 +94,7 @@ body {
 	background: var(--light);
 }
 #sidebar .side-menu li.active {
-<<<<<<< HEAD
-	background: var(--grey);
-=======
 	background: var(--yellow);
->>>>>>> nithin
 }
 #sidebar .side-menu li a {
 	white-space: nowrap;
@@ -114,11 +102,7 @@ body {
 	width: 100%;
 	display: flex;
 	grid-gap: calc(4px + 6px);
-<<<<<<< HEAD
-	background: var(--light);
-=======
 	background: #f5d6c9;
->>>>>>> nithin
 	border-radius: 36px;
 	align-items: center;
 	color: var(--dark);
@@ -345,228 +329,29 @@ body {
 	color: var(--blue);
 	pointer-events: unset;
 }
-#content main .top .btn-download {
-	height: 48px;
-	border-radius: 48px;
-	background: var(--blue);
-	color: var(--light);
-	padding: 0 24px;
-	display: flex;
-	align-items: center;
-	grid-gap: 16px;
-	font-size: 16px;
-	font-weight: 500;
-}
-#content main .top .btn-download .icon {
-	font-size: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-#content main .box-info {
-	margin-top: 40px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 36px;
-}
-#content main .box-info .box {
-	padding: 24px;
-	background: var(--light);
-	border-radius: 20px;
-	display: flex;
-	grid-gap: 32px;
-	align-items: center;
-	flex-wrap: wrap;
-}
-#content main .box-info .box .icon {
-	display: flex;
-	min-width: 100px;
-	height: 100px;
-	border-radius: 10px;
-	justify-content: center;
-	align-items: center;
-	background: var(--grey);
-	font-size: 48px;
-}
-#content main .box-info .box .text h3 {
-	font-size: 28px;
-	margin-bottom: 4px;
-	font-weight: 600;
-}
-#content main .box-info .box .text p {
-	font-size: 16px;
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}*/
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
+/*main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
 
-#content main .box-info .box:nth-child(1) .icon {
-	color: var(--blue);
-	background: var(--light-blue);
-}
-#content main .box-info .box:nth-child(2) .icon {
-	color: var(--yellow);
-	background: var(--light-yellow);
-}
-#content main .box-info .box:nth-child(3) .icon {
-	color: var(--orange);
-	background: var(--light-orange);
-}
-
-#content main .table-data {
-	display: flex;
-	grid-gap: 36px;
-	margin-top: 36px;
-	flex-wrap: wrap;
-}
-#content main .table-data > div {
-	padding: 24px;
-	border-radius: 20px;
-	background: var(--light);
-	overflow-x: auto;
-}
-#content main .table-data .order {
-	flex-basis: 500px;
-	flex-grow: 1;
-}
-#content main .table-data .todo .head,
-#content main .table-data .order .head {
-	display: flex;
-	align-items: center;
-	grid-gap: 24px;
-	margin-bottom: 36px;
-	min-width: 340px;
-}
-#content main .table-data .todo .head h3,
-#content main .table-data .order .head h3 {
-	margin-right: auto;
-	font-size: 24px;
-	font-weight: 600;
-}
-#content main .table-data .order table {
-	width: 100%;
-	border-collapse: collapse;
-	min-width: 520px;
-}
-#content main .table-data .order table th {
-	padding-bottom: 10px;
-	font-size: 14px;
-	font-weight: 600;
-	text-align: left;
-	border-bottom: 1px solid var(--grey);
-}
-#content main .table-data .order table th:nth-child(1) {
-	padding-left: 10px;
-}
-#content main .table-data .order table tbody tr:hover {
-	background: var(--grey);
-}
-#content main .table-data .order table td {
-	padding: 6px 0;
-}
-#content main .table-data .order table td img {
-	width: 36px;
-	height: 36px;
-	object-fit: cover;
-	border-radius: 50%;
-}
-#content main .table-data .order table tr td:nth-child(1) {
-	display: flex;
-	align-items: center;
-	grid-gap: 16px;
-	padding-left: 10px;
-}
-#content main .table-data .order table tr td .badge {
-	font-size: 10px;
-	font-weight: 600;
-	height: 24px;
-	line-height: 24px;
-	padding: 0 16px;
-	border-radius: 24px;
-	color: var(--light);
-	display: inline-block;
-}
-#content main .table-data .order table tr td .badge.completed {
-	background: var(--blue);
-}
-#content main .table-data .order table tr td .badge.process {
-	background: var(--yellow);
-}
-#content main .table-data .order table tr td .badge.pending {
-	background: var(--orange);
-}
-
-#content main .table-data .todo {
-	flex-basis: 360px;
-	flex-grow: 1;
-}
-#content main .table-data .todo .todos {
-	min-width: 520px;
-}
-#content main .table-data .todo .todos li {
-	border-radius: 10px;
-	background: var(--grey);
-	padding: 16px 24px;
-	margin: 8px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 16px;
-	font-weight: 500;
-}
-#content main .table-data .todo .todos li.completed {
-	border-left: 10px solid var(--blue);
-}
-#content main .table-data .todo .todos li.not-completed {
-	border-left: 10px solid var(--orange);
-}
-#content main .table-data .todo .todos li .menu {
-	cursor: pointer;
-}
-/* CONTENT */
-
-
-
-
-@media screen and (max-width: 576px) {
-	#content nav .link-nav {
-		display: none;
-	}
-
-	#content main .box-info {
-		grid-template-columns: 1fr;
-	}
-}
-
-
-
-
-
-@media screen and (max-width: 991px) {
-	#content nav form .form-input input {
-		display: none;
-	}
-	#content nav form .form-input .search-icon {
-		background: var(--light);
-		color: var(--dark);
-	}
-	#content nav .profile .name {
-		display: none;
-	}
-
-	#content nav {
-		padding: 0 24px;
-		grid-gap: 16px;
-	}
-
-	#content main {
-		padding: 24px 24px;
-	}
-}
-
-
-
-
-@media screen and (max-width: 1200px) {
-	#content {
-		width: calc(100% - ((56px - 8px) + ((4px + 6px) * 2)));
-	}
+.chart-container {
+    margin-top: 20px;
+    text-align: center;
 }
