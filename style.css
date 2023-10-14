@@ -61,19 +61,27 @@ body {
 #sidebar .logo {
 	font-size: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	color: var(--blue);
 =======
 	color: var(--red);
 >>>>>>> nithin
+=======
+	color: var(--red);
+>>>>>>> sudesh
 	font-weight: 700;
 	text-align: center;
 	width: 100%;
 	height: calc(56px + 24px);
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background: var(--light);
 =======
 	background:#f5d6c9;
 >>>>>>> nithin
+=======
+	background:#f5d6c9;
+>>>>>>> sudesh
 	line-height: 56px;
 	display: flex;
 	align-items: center;
@@ -103,10 +111,14 @@ body {
 }
 #sidebar .side-menu li.active {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background: var(--grey);
 =======
 	background: var(--yellow);
 >>>>>>> nithin
+=======
+	background: var(--yellow);
+>>>>>>> sudesh
 }
 #sidebar .side-menu li a {
 	white-space: nowrap;
@@ -115,10 +127,14 @@ body {
 	display: flex;
 	grid-gap: calc(4px + 6px);
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background: var(--light);
 =======
 	background: #f5d6c9;
 >>>>>>> nithin
+=======
+	background: #f5d6c9;
+>>>>>>> sudesh
 	border-radius: 36px;
 	align-items: center;
 	color: var(--dark);
